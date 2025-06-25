@@ -1,0 +1,60 @@
+html {scroll-behavior: smooth;}
+body {font-family: 'Open Sans', sans-serif; color: #454545; margin: 0}
+h1 {  color: #03264F; font-weight: bold;}
+h3 { color: #03264F; font-weight: normal;}
+h4 {margin-block-end: 0.5em; font-size: 1.2em}
+td { padding: 0.5em 0.5em; }
+#content { max-width: 50em; margin:0 auto; padding: 1rem; }
+#navbar {
+    background-color: ghostwhite; 
+    align-items:center; 
+    display: flex;
+    padding: 1rem;
+    margin:0 auto;
+    justify-content: space-between;
+}
+#navbar a {text-decoration:none}
+#logo { display: flex; align-items:center; padding-right: 3em }
+#logo img { width: 5rem; }
+#logotext { margin: 0 1rem;}
+#logotext h1, h3 {margin-block-start: 0; margin-block-end: 0;}
+
+.menu a {
+    color: #454545;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.menu a:hover:not(.active) { padding: 14px 16px; background-color: white; }
+
+summary {
+    font-size: 1.5em;
+    color:#454545;
+}
+
+.click-zoom {
+    width: 24em; 
+    display:inline-block;
+}
+
+.click-zoom input[type=checkbox] {
+  display: none;
+}
+
+.click-zoom img {  
+  transition: transform 0.25s ease;
+  cursor: zoom-in
+}
+
+.click-zoom input[type=checkbox]:checked~img {
+  transform:  scale(2);
+  cursor: zoom-out
+}
+
+
+
+
+
+
+

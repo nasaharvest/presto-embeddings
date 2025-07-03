@@ -1,3 +1,3 @@
 # presto-embeddings
 
-Blogpost about Presto Embeddings.
+Blog post about Presto Embeddings: http://nasaharvest.github.io/presto-embeddings

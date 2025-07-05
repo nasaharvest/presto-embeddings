@@ -37,7 +37,7 @@
         <p>
             Geospatial embeddings offer a novel, efficient, and accessible way to map landscape features.
             <br> 
-            In part 1 of this blog post, we show how to generate embeddings using a geospatial foundation model (Presto).
+            In part 1 of this blog post, we show how to generate embeddings using a geospatial foundation model (Presto <a href="#presto" id="presto-ref">[1]</a>).
             <br>
             In part 2 we show that geospatial embeddings can be used to map cropland with high accuracy.
             <br><br>
@@ -102,6 +102,7 @@
             <p>
             To test our pipeline, we generated embeddings for all of Togo (56,785 km<sup>2</sup>)
             for the time frame of March 2019 - March 2020.
+            We will use labels collected in March 2020 as part of a Rapid Response crop mapping effort in Togo <a href="#togo-rapid" id="togo-rapid-ref">[2]</a>.
             The embedding generation took 16 hours and cost $313.40. 
             The final Togo asset size was 128.8 GB.
             </p>
@@ -319,10 +320,10 @@ Map.addLayer(croplandMap, classVis, 'Presto Embeddings Based Cropland');
                 <br><br>
                 Green represents crops and yellow is everything else. The displayed maps are:
                 <ol>
-                    <li>a cropland map derived from the WorldCover land cover map,</li>
-                    <li>the GLAD cropland map,</li>
+                    <li>a cropland map derived from the WorldCover land cover map <a href="#worldcover" id="worldcover-ref">[3]</a>,</li>
+                    <li>the GLAD cropland map <a href="#glad" id="glad-ref">[4]</a>,</li>
                     <li>the Presto embedding-based cropland map,</li>
-                    <li>the DeepMind embedding-based cropland map.</li>
+                    <li>the DeepMind embedding-based cropland map <a href="#dm-emb" id="dm-emb-ref">[5]</a>.</li>
                 </ol>
             </p>
             <div class='click-zoom width4'> 
@@ -496,6 +497,15 @@ Map.addLayer(croplandMap, classVis, 'Presto Embeddings Based Cropland');
             Our results indicate the potential for using embeddings for more effective mapping 
             in different regions and for different use cases. 
             </p>
+        </details>
+        <br><br>
+        <details>
+            <summary>Citations</summary>
+            <p id="presto">[1] <i>Lightweight, Pre-trained Transformers for Remote Sensing Timeseries</i>. Gabriel Tseng, Ruben Cartuyvels, Ivan Zvonkov, Mirali Purohit, David Rolnick, Hannah Kerner, 2023. Neural Information Processing Systems (NeurIPS), Workshop on Tackling climate change with machine learning (<a href=https://arxiv.org/abs/2304.14065>link</a>) <a href="#presto-ref">↵</a></p>
+            <p id="togo-rapid">[2] <i>Rapid Response Crop Maps in Data Sparse Regions</i>. Hannah Kerner, Gabriel Tseng, Inbal Becker-Reshef, Catherine Nakalembe, Brian Barker, Blake Munshell, Madhava Paliyam, Mehdi Hosseini, 2020. Knowledge Discovery and Data (KDD), Workshop on Humanitarian Mapping (<a href=https://arxiv.org/abs/2006.16866>link</a>) <a href="#togo-rapid-ref">↵</a></p>       
+            <p id="worldcover">[3] <i>ESA WorldCover 10 m 2021 v200</i>. Daniele Zanaga, Ruben Van De Kerchove, Dirk Daems, Wanda De Keersmaecker, Carsten Brockmann, Grit Kirches, Jan Wevers, Oliver Cartus, Maurizio Santoro, Steffen Fritz, Myroslava Lesiv, Martin Herold, N-E Tsendbazar, Panpan Xu, Fabrizio Ramoino, Olivier Arino, Zenodo (<a href=https://esa-worldcover.org/en>link</a>) <a href="#worldcover-ref">↵</a></p>   
+            <p id="glad">[4] <i>Global maps of cropland extent and change show accelerated cropland expansion in the twenty-first century</i>. Peter Potapov, Svetlana Turubanova, Matthew C Hansen, Alexandra Tyukavina, Viviana Zalles, Ahmad Khan, Xiao-Peng Song, Amy Pickens, Quan Shen, Jocelyn Cortez, Nature Food (<a href=https://www.nature.com/articles/s43016-021-00429-z>link</a>) <a href="#glad-ref">↵</a></p> 
+            <p id="dm-emb">[5] <i>Better Maps Faster: Low-shot Classification and Regression with Embedding Fields</i>. Chris Brown, Michal Kazmierski, Valerie Pasquarella, William J Rucklidge, Masha Samsikova, Chenhui Zhang, Evan Shelhamer, Sophia Alj, Emily Schechter, Sean Askay, Alexis Boukouvalas, AGU (<a href=https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL>link</a>) <a href="#dm-emb-ref">↵</a></p>         
         </details>
         <br>
         <br>

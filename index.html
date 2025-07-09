@@ -318,7 +318,7 @@ Map.addLayer(croplandMap, classVis, 'Presto Embeddings Based Cropland');
                 One way of comparing embeddings is visually assessing and comparing the generated cropland maps.
                 We display the embedding-generated maps below, in addition to the best available cropland maps in Togo.
                 <br><br>
-                Green represents crops and yellow is everything else. The displayed maps are:
+                <span style="background-color: green; color: white">Green represents crops</span> and <span style="background-color: yellow">yellow is everything else</span>. The displayed maps are:
                 <ol>
                     <li>a cropland map derived from the WorldCover land cover map <a href="#worldcover" id="worldcover-ref">[3]</a>,</li>
                     <li>the GLAD cropland map <a href="#glad" id="glad-ref">[4]</a>,</li>
@@ -438,10 +438,10 @@ Map.addLayer(croplandMap, classVis, 'Presto Embeddings Based Cropland');
             </div>
             <p>
                 <ul>
-                    <li>All maps with the exception of GLAD correctly identify built-up areas as non-crop (yellow)</li>
-                    <li>Embedding-based maps appear to classify more cropland (green) correctly</li>
-                    <li>The DeepMind embedding-based map over predicts crops in some shrub/tree areas</li>
-                    <li>Presto embedding-based map visually accurately identifies many of the tree areas as non-crop</li>
+                    <li>All maps with the exception of GLAD correctly identify built-up areas as <span style="background-color: yellow">non-crop (yellow)</span></li>
+                    <li>Embedding-based maps appear to classify more <span style="background-color: green; color: white">cropland (green)</span> correctly</li>
+                    <li>The DeepMind embedding-based map over predicts <span style="background-color: green; color: white">crops</span> in some shrub/tree areas</li>
+                    <li>Presto embedding-based map visually accurately identifies many of the tree areas as <span style="background-color: yellow">non-crop</span></li>
                 </ul>
             </p>
 
